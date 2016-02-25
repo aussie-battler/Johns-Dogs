@@ -18,6 +18,7 @@ if (_typeOfCursorTarget in _dogArray) then
 				_caller = _this select 0;
 				_action = _this select 2;
 				_caller removeAction _action;
+				JohnOplayerHasDog = true;
 
 				_dogActual = _typeOfCursorTarget;
 				_dogPos = getPos _cursorTarget;

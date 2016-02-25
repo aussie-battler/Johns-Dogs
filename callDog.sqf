@@ -20,7 +20,7 @@ if !(JohnOplayerHasDog) then
 		_caller = _this select 0;
 		_action = _this select 2;
 		_caller removeAction _action;
-
+		JohnOplayerHasDog = true;
 		_dogArray = ["Alsatian_Random_F","Alsatian_Sandblack_F","Alsatian_Black_F","Alsatian_Sand_F","Fin_tricolour_F","Fin_ocherwhite_F"];
 
 		_randomDog = selectRandom _dogArray;
