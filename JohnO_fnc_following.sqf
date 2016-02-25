@@ -3,6 +3,8 @@ BURK_dog setVariable ["BIS_fnc_animalBehaviour_disable", true];
 BURK_dogFollowing = true;
 BURK_dogSeeking = false;
 
+private ["_safeZoneLocations"];
+
 _safeZoneLocations = [[0,0,0],[0,0,0]];
 
 while {BURK_dogFollowing} do 
