@@ -29,7 +29,7 @@ if !(JohnOplayerHasDog) then
 
 		BURK_dog setVariable ["BIS_fnc_animalBehaviour_disable", true];
 
-		BURK_dog addMPEventHandler ["MPKilled",
+		/*BURK_dog addMPEventHandler ["MPKilled",
 		{
 
 			['remove',ExileClientSessionId, player, '1',''] remoteExecCall ['ExileServer_john_dogs_network_request', 2];
@@ -41,7 +41,7 @@ if !(JohnOplayerHasDog) then
 		[] execVM "unrest\scripts\dogs\JohnO_fnc_dogFollow.sqf";
 
 		sleep 5;
-		['add',ExileClientSessionId, player, '2',_randomDog] remoteExecCall ['ExileServer_john_dogs_network_request', 2];
+		['add',ExileClientSessionId, player, '2',_randomDog] remoteExecCall ['ExileServer_john_dogs_network_request', 2];*/
 
 	}
 	else
