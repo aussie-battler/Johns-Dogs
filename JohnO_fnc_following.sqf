@@ -23,12 +23,12 @@ while {BURK_dogFollowing} do
 
 	if !(alive BURK_dog) exitWith 
 	{
-		player removeAction _follow;
-		player removeAction _seek;
-		player removeAction _passive;
-		player removeAction _stay;
-		player removeAction _run;
-		player removeAction _sprint;
+		player removeAction Dogfollow;
+		player removeAction dogseek;
+		player removeAction Dogpassive;
+		player removeAction Dogstay;
+		player removeAction Dogrun;
+		player removeAction Dogsprint;
 		player removeAction agressiveAction;
 		player removeAction passiveAction;
 		playerHasDog = false;
