@@ -10,6 +10,10 @@ _isAlive = alive _cursorTarget;
 
 if (_typeOfCursorTarget in _dogArray) then
 {
+	if (isNil "JohnOplayerHasDog") then 
+	{
+		JohnOplayerHasDog = false;
+	};
 	//if (playerHasDog == 1) then
 	if !(JohnOplayerHasDog) then
 	{
