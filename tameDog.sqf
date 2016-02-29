@@ -34,7 +34,7 @@ if (_typeOfCursorTarget in _dogArray) then
 
 				Agressive = false;
 				
-				[] execVM "unrest\scripts\dogs\JohnO_fnc_dogFollow.sqf";
+				[] execVM "JohnO_fnc_dogFollow.sqf";
 
 			}
 			else
