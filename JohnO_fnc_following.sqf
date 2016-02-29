@@ -3,7 +3,7 @@ BURK_dog setVariable ["BIS_fnc_animalBehaviour_disable", true];
 BURK_dogFollowing = true;
 BURK_dogSeeking = false;
 
-private ["_safeZoneLocations"];
+private ["_safeZoneLocations","_safeZone"];
 
 _safeZoneLocations = [[0,0,0],[0,0,0]];
 
@@ -13,13 +13,18 @@ while {BURK_dogFollowing} do
 		if (player distance _x < 200) then
 		{
 			_safeZone = true;
-		};
+		}
+		else
+		{
+			_safeZone = false;
+		}	
 	} forEach _safeZoneLocations;
 
 	if (_safeZone) then
 	{
 		BURK_dog playMove "Dog_Sit";
 	};	
+
 
 	if !(alive BURK_dog) exitWith 
 	{
