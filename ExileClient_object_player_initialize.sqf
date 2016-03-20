@@ -27,6 +27,14 @@ enableSentences false;
 enableRadio false;
 player setVariable ["BIS_noCoreConversations", true];
 [] call ExileClient_object_player_event_hook;
+ExileGasMaskNextSoundAt = diag_tickTime;
+if (ExileClientGasMaskVisible) then 
+{
+	false call ExileClient_gui_gasMask_toggle;
+};
 [] call ExileClient_object_player_stats_reset;
 [] call ExileClient_gui_postProcessing_reset;
+[] call ExileClient_system_breathing_event_onPlayerSpawned;
+[] call ExileClient_system_snow_event_onPlayerSpawned;
+[] call ExileClient_system_radiation_event_onPlayerSpawned;
 true
